@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bayan_container {
+  background-color: coral;
+}
+
+.bayan_container:hover {
+  color: azure;
+}
+
+li:hover img {
+  display: block;
+}
+
+img {
+  display: none;
+  background-color: coral;
+}
+
+.header {
+}
+
+.bar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: black;
+  display: table;
+}
