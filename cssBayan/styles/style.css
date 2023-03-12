@@ -18,13 +18,13 @@ h1 {
 }
 .bar {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  /*  font-size: 20px; */
   color: wheat;
   display: block;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   padding: 10px 20px;
-  transition: color 2s linear 0.1s;
+  transition: color 1s linear 0.1s;
   border-top: 1px solid gray;
 }
 
@@ -54,14 +54,22 @@ h1 {
 .radio_button:hover ~ .hidden_image {
   display: block;
 }
-.radio_button:hover ~ span[id*="cat"] {
+/* .radio_button:hover ~ span[id*="cat"] {
   display: inline;
   color: black;
 }
 .radio_button:hover ~ span[id*="paw"] {
   display: none;
+} */
+
+.item:hover span[id$="paw"] {
+  display: none;
 }
 
+.item:hover span[id*="cat"] {
+  display: inline;
+  color: black;
+}
 /* Hover over container */
 
 .bayan_container:hover .bar {
