@@ -3,30 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*Container*/
 .bayan_container {
   background-color: coral;
+  max-width: 80%;
+  margin: 10px, auto;
 }
 
 .bayan_container:hover {
   color: azure;
 }
-
-li:hover img {
-  display: block;
+.bayan_container:hover .bar {
+  color: wheat;
 }
-
-img {
-  display: none;
-  background-color: coral;
-}
-
-.header {
-}
-
 .bar {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   color: black;
-  display: table;
+  display: block;
+  cursor: pointer;
+  padding: 20px 20px;
+  transition: color 0.5s linear 0.1s;
+  border-top: 1px solid gray;
+}
+
+.radio_button {
+  position: absolute;
+  width: 0;
+  height: 0;
+  appearance: none;
+}
+
+.radio_button:checked ~ .hidden_image {
+  display: block;
+}
+
+.radio_button:checked ~ .bar {
+  color: black;
+}
+.radio_button:hover ~ .hidden_image {
+  display: block;
+}
+
+/* ul {
+  list-style-type: none;
+}
+
+li:hover img {
+  display: block;
+} */
+
+.hidden_image {
+  display: none;
+  background-color: coral;
 }
