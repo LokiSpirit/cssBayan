@@ -10,6 +10,12 @@
   margin: 20px auto;
 }
 
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  display: block;
+  padding: 10px 20px;
+}
 .bar {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
@@ -18,7 +24,7 @@
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
-  transition: color 0.5s linear 0.1s;
+  transition: color 2s linear 0.1s;
   border-top: 1px solid gray;
 }
 
@@ -33,9 +39,12 @@
   display: block;
 }
 
-.radio_button:checked ~ span[id*="_cat"] {
+.radio_button:checked ~ span[id*="cat"] {
   display: inline;
   color: black;
+}
+.radio_button:checked ~ span[id*="paw"] {
+  display: none;
 }
 .radio_button:checked ~ .bar {
   color: black;
@@ -45,9 +54,12 @@
 .radio_button:hover ~ .hidden_image {
   display: block;
 }
-.radio_button:hover ~ span[id*="_cat"] {
+.radio_button:hover ~ span[id*="cat"] {
   display: inline;
   color: black;
+}
+.radio_button:hover ~ span[id*="paw"] {
+  display: none;
 }
 
 /* Hover over container */
@@ -55,7 +67,7 @@
 .bayan_container:hover .bar {
   color: black;
 }
-.bayan_container:hover span[id$="_paw"] {
+.bayan_container:hover span[id$="paw"] {
   display: inline;
   color: black;
 }
